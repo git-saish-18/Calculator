@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon" />
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <nav id="nav" id="main-page">
+      <ul>
+        <li class="textname">
+          <a href="/index.html" class="textname">Calculator</a></li>
+        <li>
+          <a href="/about.html" class="textname">About</a>
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="DarkMode"
+            id="radiobtn"
+            className="btn btn-outline-success text-white"
+            onclick="(dark())"
+          />
+          <lable id="text" class="textname">DarkMode</lable>
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="DarkMode"
+            id="radiobtn"
+            className="btn btn-outline-success text-white"
+            onclick="(light())"
+          />
+          <lable id="text" class="textname">LightMode</lable>
+        </li>
+      </ul>
+    </nav>
+    <div class="contanier">
+      <div class="main">
+        <h1 class="textname">Calculator</h1>
+        <div class="display">
+          <div>
+            <input
+              type="text"
+              name=""
+              id="Input"
+              placeholder="Enter expression"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name=""
+              id="Result"
+              readonly
+              placeholder="Result"
+            />
+          </div>
+        </div>
+        <div>
+          <input
+            type="submit"
+            class="INBTN operator"
+            onclick="(put(value))"
+            value="("
+          />
+          <input
+            type="submit"
+            class="INBTN operator"
+            onclick="(put(value))"
+            value=")"
+          />
+          <input
+            type="submit"
+            class="INBTN operator"
+            value="%"
+            onclick="(put(value))"
+          />
+          <input
+            type="submit"
+            id="del"
+            value="⌫"
+            class="operator"
+            onclick="(DeleteInput())"
+          />
+        </div>
+        <div>
+          <input
+            type="submit"
+            class="INBTN Number"
+            onclick="(put(value))"
+            value="7"
+          />
+          <input
+            type="submit"
+            class="INBTN Number"
+            onclick="(put(value))"
+            value="8"
+          />
+          <input
+            type="submit"
+            class="INBTN Number"
+            onclick="(put(value))"
+            value="9"
+          />
+          <input
+            type="submit"
+            class="INBTN operator"
+            onclick="(put(value))"
+            value="/"
+          />
+        </div>
+        <div>
+          <input
+            type="submit"
+            class="INBTN Number"
+            onclick="(put(value))"
+            value="4"
+          />
+          <input
+            type="submit"
+            class="INBTN Number"
+            onclick="(put(value))"
+            value="5"
+          />
+          <input
+            type="submit"
+            class="INBTN Number"
+            onclick="(put(value))"
+            value="6"
+          />
+          <input
+            type="submit"
+            class="INBTN operator"
+            onclick="(put(value))"
+            value="*"
+          />
+        </div>
+        <div>
+          <input
+            type="submit"
+            class="INBTN Number"
+            onclick="(put(value))"
+            value="1"
+          />
+          <input
+            type="submit"
+            class="INBTN Number"
+            onclick="(put(value))"
+            value="2"
+          />
+          <input
+            type="submit"
+            class="INBTN Number"
+            onclick="(put(value))"
+            value="3"
+          />
+          <input
+            type="submit"
+            class="INBTN operator"
+            onclick="(put(value))"
+            value="-"
+          />
+        </div>
+        <div>
+          <input
+            type="submit"
+            class="INBTN operator"
+            onclick="(put(value))"
+            value="."
+          />
+          <input
+            type="submit"
+            class="INBTN Number"
+            onclick="(put(value))"
+            value="0"
+          />
+          <input
+            type="submit"
+            class="clear operator"
+            value="clear"
+            onclick="(clearInput())"
+          />
+          <input
+            type="submit"
+            class="INBTN operator"
+            onclick="(put(value))"
+            value="+"
+          />
+        </div>
+        <div>
+          <input
+            type="submit"
+            class="calculate"
+            onclick="(put(value))"
+            value="="
+          />
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <hr class="hr1" />
+      <footer>
+        <center>copywrite © www.ST/Calculator...</center>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+    <script src="route.js"></script>
+  </body>
+</html>
